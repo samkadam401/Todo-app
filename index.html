@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        #container{
+            min-width: 100%;
+            min-height: 100vh;
+        }
+    </style>
+    <nav id="nav" class="navbar bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-light">Todo app</span>
+          <button id="btn01" class="btn btn-warning float-end btn-sm ">ChangeTheme</button>
+        </div>
+       
+      </nav>
+
+
+      <div id="container" class="container p-5">
+
+        <form>
+            <input
+              class="form-control my-3 rounded-0"
+              type="text"
+              placeholder="Enter Text Here..."
+              required
+            />
+            <button id="btnsubmit" type="submit" class="btn btn-success rounded-0 w-100 ">
+              Save
+            </button>
+          </form>
+ 
+          <ul class="my-3 list-group ">
+            <li class="list-group-item  rounded-0 p-3 my-2 bg-light text-black shadow-lg">
+              Text Here
+              <button class="btn btn-sm btn-danger float-end rounded-0">
+                Delete
+              </button>
+            </li>
+          </ul>
+      </div>
+
+      
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
